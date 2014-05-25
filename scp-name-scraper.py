@@ -42,7 +42,7 @@ def write_dict(SCP_list):
     f.write("var scp_names = {\n")
     for series in SCP_list:
         for SCP in series:
-            f.write("%s: \"%s\",\n" %
+            f.write("\"%s\": \"%s\",\n" %
                     (SCP[0].encode("UTF-8"),
                     SCP[1].encode("UTF-8").replace("\"", "\\\"")))
     f.write("};");
