@@ -38,10 +38,14 @@ def parse_page(page):
     return series_tuples
 
 def write_dict(SCP_list):
-    f = open("SCP_LIST", "w")
+    f = open("SCP_dict.js", "w")
+    f.write("var scp_names = {\n")
     for series in SCP_list:
         for SCP in series:
-            f.write("%s %s\n" % (SCP[0].encode("UTF-8"), SCP[1].encode("UTF-8")))
+            f.write("%s: \"%s\",\n" %
+                    (SCP[0].encode("UTF-8"),
+                    SCP[1].encode("UTF-8").replace("\"", "\\\"")))
+    f.write("};");
     f.close()
 
 # Note that URLs must begin with http://
