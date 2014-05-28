@@ -3012,7 +3012,7 @@ var scp_names = {
 
 function add_name(text)
 {
-    return text + " (" + SCP_dict[text] + ")";
+    return text + " (" + scp_names[text] + ")";
 }
 
 /**
