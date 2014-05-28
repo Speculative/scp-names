@@ -7,8 +7,8 @@ This script is very experimental at the moment. Use at your own risk.
 
 Installation
 ------------
-Put javascript: followed by the contents of
-[SCP-names](https://raw.githubusercontent.com/Speculative/scp-names/master/scp-names.js)
+Put the contents of
+[SCP-names](https://raw.githubusercontent.com/Speculative/scp-names/master/bookmarklet)
 as the target of a bookmark and you're done! Click on it when you want to
 see names on a page.
 
